@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="clock.css">
+</head>
+
+    <body onload="startTime()">
+
+        <center><h2>Saat</h2></center>
+        
+       <div style="text-align: center;"  id="txt"></div>
+        
+        <script style="border-radius: 8px;" style="color: cornsilk;">
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+   
+    
+</body>
+</html>

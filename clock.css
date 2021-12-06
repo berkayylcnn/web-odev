@@ -1,0 +1,15 @@
+:root{
+    background-color: whitesmoke;
+    }
+
+body{
+    background-color: rgb(69, 97, 156);
+    height: 100%;
+    width: 200px;
+    
+}    
+.clock{
+   width:200px;
+    height: 100px;
+    align-items: center;
+}
