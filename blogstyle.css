@@ -54,7 +54,7 @@ button {
     background-color:cadetblue;
     border-radius: 6px;
     width: 100%;
-    border-bottom: 4px;
+    border-bottom: 4px solid darkcyan;
     cursor: pointer;
 }
 button:active {
@@ -62,13 +62,13 @@ button:active {
     transform: translateY(4px);
 }
 button.secodary{
-    background-color: cornflowerblue;
-    border-bottom-color:orange ;
+    background-color: lightyellow;
+    border-bottom-color:lightgreen ;
     color: whitesmoke;
 }
 button.tertiary{
-    background-color: cadetblue;
-    border-bottom-color:grey ;
+    background-color: red;
+    border-bottom-color:darkred ;
     color: whitesmoke;
 }
 .grid li.reset{

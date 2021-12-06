@@ -10,7 +10,7 @@ var viewer = el("#viewer"),
     deleteEl = el("#delete"),
     clear = el("#clear"),
     nums = el("[data-value]"),
-    ops = el("[data-opernad]");
+    ops = el("[data-operand]");
 
     var result = 0,
         number1 = "",
@@ -27,8 +27,8 @@ var viewer = el("#viewer"),
      var moveNumber = function () {
          number1 = number2 ;
          number2 = "";
-         operand = this.getAttribute("data-opernad");
-         viewer.setAttribute('value', opernad)
+         operand = this.getAttribute("data-operand");
+         viewer.setAttribute('value', operand)
      }
      for ( i= 0; i < ops.length; i++){
          ops[i].onclick = moveNumber
@@ -40,6 +40,7 @@ var viewer = el("#viewer"),
          switch(operand){
             case "+":
                  result = number1 + number2;
+                 
                 break;
             case "-":
                  result = number1 - number2;
